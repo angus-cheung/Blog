@@ -21,6 +21,8 @@
           <h1 id="project_title">iOS 日常开发点滴</h1>
           <h2 id="project_tagline"></h2>
 
+
+
             <section id="downloads">
               <a class="zip_download_link" href="https://github.com/zhangzhang86/Blog/zipball/master">Download this project as a .zip file</a>
               <a class="tar_download_link" href="https://github.com/zhangzhang86/Blog/tarball/master">Download this project as a tar.gz file</a>
@@ -38,6 +40,14 @@
 <p>欢迎交流。</p>
       </section>
     </div>
+
+    <h2>{{ page.title }}</h2>
+　　<p>最新文章</p>
+　　<ul>
+　　　　{% for post in site.posts %}
+　　　　　　<li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+　　　　{% endfor %}
+　　</ul>
 
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
