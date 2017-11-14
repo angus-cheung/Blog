@@ -1,0 +1,8 @@
+title: iOS 日常开发点滴
+description: 
+google_analytics: 
+show_downloads: true
+theme: jekyll-theme-slate
+
+gems:
+  - jekyll-mentions
